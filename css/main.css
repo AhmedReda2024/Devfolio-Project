@@ -1,0 +1,538 @@
+/** ############ Start Global ############ **/
+:root {
+  --main-color: #0078ff;
+  --white-color: #fff;
+  --hover-borderColor: #e5effca8;
+}
+.bg-nav {
+  background-color: rgba(0, 0, 0);
+}
+.bg-light-grey {
+  background-color: #f5f5f5;
+}
+.main-title {
+  position: relative;
+  text-align: center;
+}
+.main-title p::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-color {
+  color: #0078ff;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.section-title {
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  width: 110px;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+/** ############ End Global ############ **/
+
+/** ############ Start NavBar Styles ############ **/
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.nav-active {
+  position: relative;
+}
+.nav-active::after {
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--white-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+nav .nav-item .nav-link {
+  color: var(--white-color);
+}
+.nav-border {
+  position: relative;
+}
+.nav-border::after {
+  content: "";
+  width: 0%;
+  height: 1.5px;
+  background-color: var(--white-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s ease-in-out;
+}
+.nav-border:hover::after {
+  width: 100%;
+}
+nav .navbar-nav .nav-item {
+  padding-inline: 8px;
+}
+/** ############ End NavBar Styles ############ **/
+
+/** ############ Start Header Styles ############ **/
+header {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.523), rgba(0, 0, 0, 0.523)),
+    url(../images/hero-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header .container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container .home-content span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: var(--white-color);
+}
+header .container .home-content span::after {
+  content: "";
+  animation: typing 10s infinite;
+}
+@keyframes typing {
+  0% {
+    content: "  |";
+  }
+  1% {
+    content: " D |";
+  }
+  2.5% {
+    content: " De|";
+  }
+  3% {
+    content: " Des |";
+  }
+  4% {
+    content: " Desi |";
+  }
+  5% {
+    content: " Desig |";
+  }
+  7% {
+    content: " Design |";
+  }
+  8% {
+    content: " Designe |";
+  }
+  9% {
+    content: " Designer |";
+  }
+  9.5% {
+    content: " Designer |";
+  }
+  10% {
+    content: " Designe |";
+  }
+  11% {
+    content: " Design |";
+  }
+  12% {
+    content: " Desig |";
+  }
+  13% {
+    content: " Desi |";
+  }
+  13.5% {
+    content: " Des |";
+  }
+  14% {
+    content: " De |";
+  }
+  15% {
+    content: " D |";
+  }
+  16% {
+    content: "  |";
+  }
+  17% {
+    content: " D |";
+  }
+  18% {
+    content: " De |";
+  }
+  20% {
+    content: " Dev |";
+  }
+  21% {
+    content: " Deve |";
+  }
+  22% {
+    content: " Devel |";
+  }
+  24% {
+    content: " Develo |";
+  }
+  25% {
+    content: " Develop |";
+  }
+  26% {
+    content: " Develope |";
+  }
+  28% {
+    content: " Developer |";
+  }
+  30% {
+    content: " Developer |";
+  }
+  31% {
+    content: " Develope |";
+  }
+  32% {
+    content: " Develop |";
+  }
+  33% {
+    content: " Develo |";
+  }
+  34% {
+    content: " Devel |";
+  }
+  35% {
+    content: " Deve |";
+  }
+  36% {
+    content: " Dev |";
+  }
+  37% {
+    content: " De |";
+  }
+  38% {
+    content: " D |";
+  }
+  39% {
+    content: "  |";
+  }
+  40% {
+    content: " F |";
+  }
+  41% {
+    content: " Fr |";
+  }
+  42% {
+    content: " Fre |";
+  }
+  43% {
+    content: " Free |";
+  }
+  45% {
+    content: " Freel |";
+  }
+  46% {
+    content: " Freela |";
+  }
+  48% {
+    content: " Freelan |";
+  }
+  49% {
+    content: " Freelanc |";
+  }
+  50% {
+    content: " Freelance |";
+  }
+  51% {
+    content: " Freelancer |";
+  }
+  52% {
+    content: " Freelancer |";
+  }
+  53% {
+    content: " Freelance |";
+  }
+  54% {
+    content: " Freelanc |";
+  }
+  55% {
+    content: " Freelan |";
+  }
+  56% {
+    content: " Freela |";
+  }
+  57% {
+    content: " Freel |";
+  }
+  58% {
+    content: " Free |";
+  }
+  59% {
+    content: " Fre |";
+  }
+  60% {
+    content: " Fr |";
+  }
+  61% {
+    content: " F |";
+  }
+  62% {
+    content: "  |";
+  }
+  63% {
+    content: " P |";
+  }
+  64.5% {
+    content: " Ph |";
+  }
+  66% {
+    content: " Pho |";
+  }
+  67.5% {
+    content: " Phot |";
+  }
+  68% {
+    content: " Photo |";
+  }
+  69.5% {
+    content: " Photog |";
+  }
+  71% {
+    content: " Photogr |";
+  }
+  72.5% {
+    content: " Photogra |";
+  }
+  74% {
+    content: " Photograp |";
+  }
+  75.5% {
+    content: " Photograph |";
+  }
+  77% {
+    content: " Photographe |";
+  }
+  78.5% {
+    content: " Photographer |";
+  }
+  80% {
+    content: " Photographer |";
+  }
+  81.5% {
+    content: " Photographe |";
+  }
+  83% {
+    content: " Photograph |";
+  }
+  84.5% {
+    content: " Photograp |";
+  }
+  86% {
+    content: " Photogra |";
+  }
+  87.5% {
+    content: " Photogr |";
+  }
+  89% {
+    content: " Photog |";
+  }
+  90.5% {
+    content: " Photo |";
+  }
+  92% {
+    content: " Phot |";
+  }
+  93.5% {
+    content: " Pho |";
+  }
+  97% {
+    content: " Ph |";
+  }
+  99% {
+    content: " P |";
+  }
+  100% {
+    content: "  |";
+  }
+}
+/** ############ End Header Styles ############ **/
+
+/** ############ Start About Styles ############ **/
+
+/** ############ End About Styles ############ **/
+
+/** ############ Start Services Styles ############ **/
+.services-icon {
+  border: 10px solid var(--main-color);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: background-color 0.4s ease, border-color 0.4s ease,
+    color 0.4s ease;
+}
+.services-icon:hover {
+  background-color: var(--main-color);
+  border-color: var(--hover-borderColor);
+  color: var(--white-color);
+}
+/** ############ End Services Styles ############ **/
+
+/** ############ Start Counter Styles ############ **/
+.counter {
+  background-image: linear-gradient(#0077ff8f, #0077ff8f),
+    url(../images/counters-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.counter-icon {
+  border: 10px solid var(--hover-borderColor);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+/** ############ End Counter Styles ############ **/
+
+/** ############ End Counter Styles ############ **/
+.portfolio .card {
+  overflow: hidden;
+}
+.portfolio .card img {
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+.portfolio .card:hover img {
+  transform: scale(1.07);
+}
+/** ############ End Counter Styles ############ **/
+
+/** ############ Start Portfolio Styles ############ **/
+/** ############ End Portfolio Styles ############ **/
+
+/** ############ Start Slider Styles ############ **/
+.slider {
+  background-image: linear-gradient(#0077ff8f, #0077ff8f),
+    url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.slider .client-img {
+  width: 150px;
+  border-radius: 50%;
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+/** ############ End Slider Styles ############ **/
+
+/** ############ Start Blog Styles ############ **/
+.blog .row .card .card-footer .footer-img {
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.blog .row .card .card-footer .left span {
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+.blog .row .card .card-footer .left span:hover {
+  color: var(--main-color);
+}
+.blog .row .card .card-body {
+  position: relative;
+}
+.blog .row .card .card-category-box {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 2px 18px 2px 18px;
+  border-radius: 4px;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.blog .row .card .card-category-box h6 {
+  font-size: 14px;
+}
+.blog .row .card .card-title {
+  cursor: pointer;
+  transition: color 0.4s ease-in-out;
+}
+.blog .row .card .card-title:hover {
+  color: var(--main-color);
+}
+/** ############ End Blog Styles ############ **/
+
+/** ############ End Blog Styles ############ **/
+.contact {
+  background-image: linear-gradient(#0077ff8f, #0077ff8f),
+    url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact form .input-group input::placeholder {
+  padding: 5px;
+}
+.contact form .input-group textarea {
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+}
+/** ############ End Blog Styles ############ **/
+
+/** ############ Start Contact Styles ############ **/
+.contact .icon-group .icon {
+  border: 5px solid var(--main-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s ease, border-color 0.4s ease,
+    color 0.4s ease;
+  cursor: pointer;
+}
+.contact .icon-group .icon:hover {
+  background-color: var(--main-color);
+  border-color: var(--hover-borderColor);
+  color: var(--white-color);
+}
+/** ############ End Contact Styles ############ **/
+
+/** ############ Start Footer Styles ############ **/
+.footer-bg {
+  background-color: #0062d3;
+}
+/** ############ End Footer Styles ############ **/
